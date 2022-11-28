@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/partituras.css">
+    </head>
+    <body>
+        <header>
+            <h1>
+                PENTECOSTALDRUMS
+            </h1>
+        </header>
+        <nav>
+            <H3>
+                <p font="sans-serif" style="color:white;">
+                PARTITURAS
+                </p>
+            </H3>
+        </nav>
+        <aside>
+        </aside>
+        <div class="container">
+            <h1>Galeria de partituras</h1>
+            <div class="image-container">
+                <div class="image"><img src="imagenes/alabanzas-al-rey-.jpg" alt=""></div>
+                <div class="image"><img src="imagenes/Creo-en-ti-trompeta.jpg" alt=""></div>
+                <div class="image"><img src="imagenes/cuerdas de amor.jpg" alt=""></div>
+                <div class="image"><img src="imagenes/gloria en lo alto.jpg" alt=""></div>
+                <div class="image"><img src="imagenes/JESUCRISTO-BASSTA.jpg" alt=""></div>
+                <div class="image"><img src="imagenes/LEVANTO-MIS-MANOS.jpg" alt=""></div>
+                <div class="image"><img src="imagenes/paz en la tormenta.jpg" alt=""></div>
+                <div class="image"><img src="imagenes/VEN-ESPIRITU-VEN.jpg" alt=""></div>
+                <div class="image"><img src="imagenes/vine a adorarte.jpg" alt=""></div>
+                <div class="image"><img src="imagenes/ya no soy esclavo.jpg" alt=""></div>
+            </div>
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="imagenes/alabanzas-al-rey-.jpg">
+            </div>
+            
+        </div>
+        <script>
+            document.querySelectorAll('.image-container img').forEach(image =>{
+                image.onclick = () =>{
+                    document.querySelector('.popup-image').style.display = 'block';
+                    document.querySelector('.popup-image img').src = image.getAttribute('src');
+                }
+            });
+
+            document.querySelector('.popup-image span').onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'none';
+                
+
+            }
+
+        </script>
+        <footer>
+            <h2 align="center">
+                DESARROLADO POR:</h2>
+            <h3 align="center">perico de los palotes</h3>
+        </footer>
+    </body>
+</html>
